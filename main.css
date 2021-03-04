@@ -1,0 +1,161 @@
+*{box-sizing:border-box;}
+
+body{margin:0;}
+img{width:120px;height:120px;}
+
+#home-id-home{transition:2s;}
+#about-id-about{transition:1s;}
+#skill-id-skill{transition:3s;}
+#testimonial-id-skill{}
+
+[class*="col-"]{width:100%;}
+/*header starts*/
+.header{text-align:center;background-color:#1d7279;padding:2% 1%;}
+.header-logo{padding:10px 0px;}
+.header-logo img{border:none;border-radius:60px;border:1px inset white;}
+.header-title{}
+.header-title h1{color:white;font-size:3.8rem;text-shadow:2px 2px black;}
+.header-menu{display:flex;flex-direction:column;justify-content:center;text-transform:uppercase;}
+
+.header-menu a{font-size:1.8rem;background-color:#500c1c;color:#2e6168;text-decoration:none;
+color:white;padding:10px 0;margin:10px 3px;border-radius:6px;}
+.header-menu a:hover{background-color:#2e6168;color:#500c1c;}
+.header::after{content:'';display:table;clear:both;}
+/*header ends*/
+
+
+/*about starts*/
+
+.about{background-color:#0ff010;color:#500c1c;padding:1% 1%;}
+.about-desc{text-align:center;font-size:1rem;}
+
+.about-desc h2{color:white;text-align:center;}
+.about-image img{border-radius:16px;width:100%;height:100%;}
+.dotted-hr{border:3px dotted white;}
+
+/*about ends*/
+/*skill starts*/
+.skill{padding:1% 7%;background-color:#e2222e;}
+.academic{padding:2px;margin:10px 2px;background-color:#0c6167;text-align:center;border-radius:20px;}
+.academic img{margin-top:20px;border-radius:60px;}
+.academic h3{padding:20px;font-size:1.8rem;color:white;background-color:gray;}
+.academic ol li{padding:20px 6px;color:white;font-size:1.2rem;}
+.academic:hover{box-shadow:6px 2px white;}
+
+.professional{padding:2px;margin:10px 2px;background-color:#0c6167;text-align:center;border-radius:20px;}
+.professional img{margin-top:20px;border-radius:60px;}
+.professional h3{padding:20px;font-size:1.8rem;color:white;background-color:gray;}
+.professional ol li{padding:20px 6px;color:white;font-size:1.2rem;}
+.professional:hover{box-shadow:6px 2px white;}
+
+.good-at{padding:2px;margin:10px 2px;background-color:#0c6167;text-align:center;border-radius:20px;}
+.good-at img{margin-top:20px;border-radius:60px;}
+.good-at h3{padding:20px;font-size:1.8rem;color:white;background-color:gray;}
+.good-at ul li{color:white;font-size:1.2rem;list-style-type:none;}
+.skill-container li{
+position:relative;
+text-transform:uppercase;font-weight:bolder;margin:60px 10px;
+text-align:left;}
+
+.skill-container li::before{content:'';
+position:absolute;width:100%;height:20px;border-radius:1000px;top:40px;
+background-color:rgb(157,152,85,.9);}
+
+.skill-container li::after{content:'';
+position:absolute;width:0%;height:20px;border-radius:1000px;top:calc(100%+40px);
+background-color:rgb(150,122,50,12);top:40px;left:0px;
+animation-duration:3s;
+animation-delay:1s;
+animation-direction:forwards;
+animation-timing-function:linear;
+animation-iteration-count:6;}
+
+.skill-container li.html::after{
+animation-name:html;
+}
+@keyframes html{
+      to{
+         width:95%;
+		 background-color:#754548;
+		 transition:2s;
+         }
+         }
+.skill-container li.css::after{
+animation-name:css;
+}
+@keyframes css{
+      to{
+         width:98%;
+		 background-color:#215455;
+         }
+         }
+.skill-container li.bootstrap::after{
+animation-name:bootstrap;
+}
+@keyframes bootstrap{
+      to{
+         width:78%;
+		 background-color:#254855;
+         }
+         }
+.skill-container li.javascript::after{
+animation-name:javascript;
+}
+@keyframes javascript{
+      to{
+         width:65%;
+		background-color:#299855;
+         }
+         }
+.skill-container li.wordpress::after{
+animation-name:wordpress;
+}
+@keyframes wordpress{
+      to{
+         width:70%;
+		background-color:#254789;
+         }
+         }
+.skill-container li.mysql::after{
+animation-name:mysql;
+}
+@keyframes mysql{
+      to{
+         width:80%;
+background-color:#277775;
+         }
+         }
+
+
+
+.good-at:hover{box-shadow:6px 3px white;}
+
+
+.skill::after{clear:both;display:table;content:'';}
+/*skill ends*/
+/*testimonial starts*/
+.testimonial{padding:2% 6%;background-color:#136956;}
+.achievement{text-align:center;margin-bottom:60px;}
+.achievement h2{border-radius:10px;background-color:#754869;color:white;padding:20px;font-size:2rem;}
+.achievement ol li{color:white;font-size:1.8rem;}
+.contract{text-align:center;margin-bottom:60px;}
+.contract h2{border-radius:10px;background-color:#568966;color:red;padding:20px;font-size:2rem;}
+
+input[type="text"]{border:none;width:100%;text-align:center;height:60px;border-radius:10px;}
+textarea{border-radius:20px;text-align:center;width:100%;height:20%;}
+.btn{padding:10px;color:white;background-color:black;font-size:2rem;
+        cursor:pointer;border:none;border-radius:10px;margin:16px;}
+.btn:hover{color:black;background-color:white;}	
+
+.social-icon{text-align:center;margin-top:2px;}
+.social-icon h2{padding:20px;font-size:1.9rem;
+border-radius:20px;color:white;background-color:#efc001;}
+.social-icon img{margin-top:20px;width:100px;margin:20px;
+height:100px;border-radius:30px;}
+
+/*testimonial ends*/
+
+/*footer starts*/
+.footer{background-color:black;color:white;}
+.footer h2{text-align:center;text-shadow:2px 3px red;padding:20px 0px;}
+/*contract ends*/
